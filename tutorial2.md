@@ -46,7 +46,7 @@ You can practice your regular expressions here: https://regexr.com
 
 ## Download the project files
 
-- Download the zip file [here](files/tut2.zip)
+- Download the zip file [here](https://github.com/COMU3120/Tutorials/raw/master/files/tut2.zip)
 - Extract it into a new folder on your Desktop
 - Open the folder in Sublime
 
