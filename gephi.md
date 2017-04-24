@@ -361,6 +361,24 @@ Click the spyglass on the left toolbar to see the entire graph
 
 ![](files/tut4/gephi_graph_atlased.png)
 
+## Accounting for weight
+
+Gephi doesn't allow for parallel edges, so it merges those edges into a single edge.
+
+If you want to visualize the frequency (how often nodes are connecting) of edges between nodes, you need to include a weight
+
+1. In Openrefine / CSV Editor, remove all the columns other that the `Source` and `Target`
+
+   *We do this because we need to remove the unique identifiers for particular edges, which prevents merging edges*
+
+2. Add a new column based on the `Source` column
+
+3. Call it `Weight`, set the value of the expression to just be `1`
+
+4. Export the CSV
+
+Now when you view the network, parallel edges will be merged so that their weight is increased according to the number of parallel edges
+
 ## Doing analysis
 
 See the quick-start guide to see what analsis you can do in Gephi
